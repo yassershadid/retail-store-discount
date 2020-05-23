@@ -10,7 +10,7 @@ This project calculates the net amount for a given bill. Once the app starts 4 u
     <td>1</td>     <td>Yasser</td>      <td>Shadid</td>      <td>startup time</td>    <td>customer</td>
   </tr>
    <tr>
-     td>2</td>   <td>Jack</td>     <td>Nicklson</td>      <td>startup time</td>      <td>customer</td>
+     <td>2</td>   <td>Jack</td>     <td>Nicklson</td>      <td>startup time</td>      <td>customer</td>
   </tr>
   <tr>
       <td>3</td>   <td>John</td>     <td>Doe</td>      <td>startup time</td>      <td>affiliate</td>
