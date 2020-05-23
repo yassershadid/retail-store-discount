@@ -1,13 +1,24 @@
 # retail-store-discount
 Retail Store Discount Service
 
-This project calculates the net amount for a given bill. Once the app starts 4 users get created as initial data, user's information below:
-  ID    firstName   LastName    CreationDate    UserType
-  1     Yasser      Shadid      startup time    customer
-  2     Jack        Nicklson    startup time    customer
-  3     John        Doe         startup time    affiliate
-  4     Reem        Abdullah    startup time    employee 
-
+This project calculates the net amount for a given bill. Once the app starts 4 users get created as initial data, user's information below:<br/>
+<table>
+  <tr>
+    <td>ID</td>    <td>firstName</td>   <td>LastName</td>    <td>CreationDate</td>    <td>UserType</td>
+    </tr>
+  <tr>
+    <td>1</td>     <td>Yasser</td>      <td>Shadid</td>      <td>startup time</td>    <td>customer</td>
+  </tr>
+   <tr>
+     <td>2</td>   <td>Jack</td>     <td>Nicklson</td>      <td>startup time</td>      <td>customer</td>
+  </tr>
+  <tr>
+      <td>3</td>   <td>John</td>     <td>Doe</td>      <td>startup time</td>      <td>affiliate</td>
+  </tr>
+  <tr>
+    <td>4</td>   <td>Reem</td>     <td>Abdullah</td>      <td>startup time</td>      <td>employee</td>
+  </tr>
+<table>
 I used h2 in memory database for the sake of demo, please consider that the data will not be available if the application is not running. 
 
 ### Run the application
