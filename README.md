@@ -19,29 +19,30 @@ This project calculates the net amount for a given bill. Once the app starts 4 u
     <td>4</td>   <td>Reem</td>     <td>Abdullah</td>      <td>startup time</td>      <td>employee</td>
   </tr>
 <table>
+  
 I used h2 in memory database for the sake of demo, please consider that the data will not be available if the application is not running. 
 
 ### Class Diagram
 Please go to documentation/Class Diagram.html
 
 ### Run the application
-1- Clone the repo.
-2- From command line open the project directory and run `mvn spring-boot:run`
-3- open http://localhost:8080/swagger-ui.html.
+1- Clone the repo.<br/>
+2- From command line open the project directory and run `mvn spring-boot:run`<br/>
+3- open http://localhost:8080/swagger-ui.html.<br/>
 
 ### Run test & coverage report
-1- Open the terminal.
-2- Naviagate to project folder.
-3- Run the below maven command
+1- Open the terminal.<br/>
+2- Naviagate to project folder.<br/>
+3- Run the below maven command<br/>
  ~~~~
 mvn test
 ~~~~
 Search for _target/site/jacoco/index.html
 
 ### Run SonarCube
-1- Open the terminal.
-2- Naviagate to project folder.
-3- Run the below maven command
+1- Open the terminal.<br/>
+2- Naviagate to project folder.<br/>
+3- Run the below maven command<br/>
 ~~~~
 mvn verify sonar:sonar
 ~~~~
