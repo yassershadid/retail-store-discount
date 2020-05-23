@@ -8,6 +8,6 @@ public class EmployeeNetAmountCalculator extends NetAmountCalculatorBase {
 
   @Override
   public BigDecimal getDiscountPercentageOnNonGroceryItems(Date createdDate) {
-    return new BigDecimal(0.7, new MathContext(2));
+    return BigDecimal.valueOf(0.7).setScale(2);
   }
 }

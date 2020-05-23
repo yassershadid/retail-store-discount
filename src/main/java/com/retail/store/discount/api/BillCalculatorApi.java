@@ -24,8 +24,6 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/v1/bill")
 public class BillCalculatorApi {
 
-  private static final Logger LOGGER = LogManager.getLogger(BillCalculatorApi.class);
-
   @Autowired
   private BillCalculatorService billCalculatorService;
 

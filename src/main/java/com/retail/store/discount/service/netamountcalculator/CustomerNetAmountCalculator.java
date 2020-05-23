@@ -14,7 +14,7 @@ public class CustomerNetAmountCalculator extends NetAmountCalculatorBase {
   public BigDecimal getDiscountPercentageOnNonGroceryItems(Date createdDate) {
     Period period = Period.between(convertToLocalDate(createdDate), LocalDate.now());
     if (period.getYears() >= 2) {
-      return new BigDecimal( 0.950).round(new MathContext(2));
+      return BigDecimal.valueOf( 0.950).round(new MathContext(2));
     }
 
     return BigDecimal.ONE.setScale(2);

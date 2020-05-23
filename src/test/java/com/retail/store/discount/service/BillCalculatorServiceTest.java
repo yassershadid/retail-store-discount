@@ -58,46 +58,46 @@ public class BillCalculatorServiceTest {
   @Test
   public void testNonUserExistWhenUserDoesNotExist() {
     Mockito.when(userRepository.findById(ArgumentMatchers.anyLong())).thenReturn(null);
-    Assert.assertEquals(billCalculatorService.nonUserExist(Long.valueOf(1)), true);
+    Assert.assertEquals(true, billCalculatorService.nonUserExist(Long.valueOf(1)));
   }
 
   @Test
   public void testNonUserExistWhenUserExists() {
     Mockito.when(userRepository.findById(ArgumentMatchers.anyLong())).thenReturn(Optional.ofNullable(aCustomerUser()));
-    Assert.assertEquals(billCalculatorService.nonUserExist(Long.valueOf(1)), false);
+    Assert.assertEquals(false, billCalculatorService.nonUserExist(Long.valueOf(1)));
   }
 
   @Test
   public void tesUserExistWhenUserExists() {
     Mockito.when(userRepository.findById(ArgumentMatchers.anyLong())).thenReturn(Optional.ofNullable(aCustomerUser()));
-    Assert.assertEquals(billCalculatorService.userExist(Long.valueOf(1)), true);
+    Assert.assertEquals(true, billCalculatorService.userExist(Long.valueOf(1)));
   }
 
   @Test
   public void testUserExistWhenUserDoesNotExist() {
     Mockito.when(userRepository.findById(ArgumentMatchers.anyLong())).thenReturn(null);
-    Assert.assertEquals(billCalculatorService.userExist(Long.valueOf(1)), false);
+    Assert.assertEquals(false, billCalculatorService.userExist(Long.valueOf(1)));
   }
 
   @Test
   public void testCalculateTotalAmount() {
-    Assert.assertEquals(billCalculatorService.calculateTotalAmount(getListOfItems()), new BigDecimal(800));
+    Assert.assertEquals( new BigDecimal(800), billCalculatorService.calculateTotalAmount(getListOfItems()));
   }
 
   @Test
   public void testCalculateTotalAmountWhenItemsIsNull() {
-    Assert.assertEquals(billCalculatorService.calculateTotalAmount(null), BigDecimal.ZERO);
+    Assert.assertEquals(BigDecimal.ZERO, billCalculatorService.calculateTotalAmount(null));
   }
 
   @Test
   public void testCalculateTotalAmountWhenItemsIsEmpty() {
-    Assert.assertEquals(billCalculatorService.calculateTotalAmount(Collections.emptyList()), BigDecimal.ZERO);
+    Assert.assertEquals( BigDecimal.ZERO, billCalculatorService.calculateTotalAmount(Collections.emptyList()));
   }
 
 
   @Test
   public void testCalculateNetAmountWhenItemsIsNull() {
-    Assert.assertEquals(billCalculatorService.calculateTotalNet(null, null), BigDecimal.ZERO);
+    Assert.assertEquals(BigDecimal.ZERO, billCalculatorService.calculateTotalNet(null, null));
   }
 
   @Test
